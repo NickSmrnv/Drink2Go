@@ -1,1 +1,19 @@
-/* в этот файл добавляет скрипты*/
+
+
+
+
+// Слайдер swiper.js
+
+const swiper = new Swiper(".mySwiper", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  mousewheel: true,
+  keyboard: true,
+});

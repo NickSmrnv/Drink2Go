@@ -2,9 +2,11 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Drink2Go - Интернет-магазин кофейных напитков</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Drink2Go - Интернет-магазин кофейных напитков</title>
   </head>
   <body class="page__body">
 
@@ -15,9 +17,18 @@
         <div class="header__logo logo">
           <a class="logo__img" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <picture>
-              <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <source media="(max-width: 1439px)" srcset="img/logo-tablet.svg">
-              <img src="img/logo-desktop.svg" alt="Логотип компании Drink2Go">
+              <source
+                media="(max-width: 767px)"
+                srcset="img/logo-mobile.svg"
+              >
+              <source
+                media="(max-width: 1439px)"
+                srcset="img/logo-tablet.svg"
+              >
+              <img
+                src="img/logo-desktop.svg"
+                alt="Логотип компании Drink2Go"
+              >
             </picture>
           </a>
           <span class="logo__text">Интернет-магазин кофейных напитков</span>
@@ -70,6 +81,294 @@
       </div>
     </header>
 
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков.</h1>
+
+      <!-- Hero блок -->
+
+      <section class="hero">
+        <h2 class="visually-hidden">Наши кофейные новинки.</h2>
+        <div class="hero__wrapper wrapper">
+
+          <!-- Slider main container -->
+          <div class="swiper mySwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+
+              <!-- Первый слайд -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/flat-white-img-mobile.png 1x, img/flat-white-img-mobile@2x.png 2x"
+                  >
+                  <source
+                    media="(max-width: 1439px)"
+                    srcset="img/flat-white-img-tablet.png 1x, img/flat-white-img-tablet@2x.png 2x"
+                  >
+                  <img
+                    src="img/flat-white-img-desktop.png"
+                    srcset="img/flat-white-img-desktop.png 1x, img/flat-white-img-desktop@2x.png 2x"
+                    alt="Небольшая банка кофе Флэт-Уайт в светлых тонах, на фоне всплеск молока."
+                  >
+                </picture>
+                <span class="hero__badge badge">Новинка!</span>
+                <h2 class="hero__title">Декаф Флэт Уайт</h2>
+                <p class="hero__text">
+                  Свежесваренный кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком — то,
+                  что нужно для расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="hero__footer">
+                  <span class="hero__old-price">295₽</span>
+                  <span class="hero__new-price">225₽</span>
+                  <a class="hero__button button" href="#">Заказать</a>
+                </div>
+              </div>
+
+              <!-- Второй слайд -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/lavender-img-mobile.png 1x, img/lavender-img-mobile.png@2x.png 2x"
+                  >
+                  <source
+                    media="(max-width: 1439px)"
+                    srcset="img/lavender-img-tablet.png 1x, img/lavender-img-tablet@2x.png 2x"
+                  >
+                  <img
+                    src="img/lavender-img-desktop.png"
+                    srcset="img/lavender-img-desktop.png 1x, img/lavender-img-desktop@2x.png 2x"
+                    alt="Небольшая банка лавандового рафа в фиолетовых оттенках, на фоне ветки лаванды."
+                  >
+                </picture>
+                <span class="hero__badge badge">Новинка!</span>
+                <h2 class="hero__title">Лавандовый Латте</h2>
+                <p class="hero__text">
+                  Невероятное сочетание перуанской высокогорной
+                  арабики с молоком ламы и лавандовым сиропом
+                  унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="hero__footer">
+                  <span class="hero__old-price">285₽</span>
+                  <span class="hero__new-price">265₽</span>
+                  <a class="hero__button button" href="#">Заказать</a>
+                </div>
+              </div>
+
+              <!-- Третий слайд -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="img/espresso-img-mobile.png 1x, img/espresso-img-mobile.png@2x.png 2x"
+                  >
+                  <source
+                    media="(max-width: 1439px)"
+                    srcset="img/espresso-img-tablet.png 1x, img/espresso-img-tablet@2x.png 2x"
+                  >
+                  <img
+                    src="img/espresso-img-desktop.png"
+                    srcset="img/espresso-img-desktop.png 1x, img/espresso-img-desktop@2x.png 2x"
+                    alt="Небольшая чёрная банка эспрессо, на фоне кофейные зёрна."
+                  >
+                </picture>
+                <span class="hero__badge badge">Новинка!</span>
+                <h2 class="hero__title">Тройной Эспрессо</h2>
+                <p class="hero__text">
+                  Мощнее укола адреналина, чернее самой тёмной ночи,
+                  этот тройной эспрессо из Колумбии покажет вам,
+                  что такое настоящая бодрость
+                </p>
+                <div class="hero__footer">
+                  <span class="hero__old-price">395₽</span>
+                  <span class="hero__new-price">375₽</span>
+                  <a class="hero__button button" href="#">Заказать</a>
+                </div>
+              </div>
+            </div>
+            <!-- Пагинация свайпера -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Кнопки влево/вправо свайпера -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Блок преимуществ -->
+
+      <section class="benefits">
+        <h2 class="visually-hidden">Наши преимущества.</h2>
+        <div class="benefits__wrapper wrapper">
+          <span class="benefits__badge badge">Преимущества</span>
+          <h2 class="benefits__title">Главные причины выбрать Drink2Go</h2>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <svg class="user-list__icon" width="50" height="56">
+                <use href="img/icons/stack.svg#icon-speed" />
+              </svg>
+              <h3 class="benefits__subtitle">Скорость</h3>
+              <p class="benefits__text">Готовый напиток всегда под рукой — просто открой банку</p>
+            </li>
+            <li class="benefits__item">
+              <svg class="user-list__icon" width="52" height="56">
+                <use href="img/icons/stack.svg#icon-shield" />
+              </svg>
+              <h3 class="benefits__subtitle">Удобство</h3>
+              <p class="benefits__text">Легко помещается и в карман, и в маленькую сумочку</p>
+            </li>
+            <li class="benefits__item">
+              <svg class="user-list__icon" width="42" height="56">
+                <use href="img/icons/stack.svg#icon-lightning" />
+              </svg>
+              <h3 class="benefits__subtitle">Бодрость</h3>
+              <p class="benefits__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            </li>
+            <li class="benefits__item">
+              <svg class="user-list__icon" width="46" height="56">
+                <use href="img/icons/stack.svg#icon-eco" />
+              </svg>
+              <h3 class="benefits__subtitle">Экологичность</h3>
+              <p class="benefits__text">Вся упаковка сделана из перерабатываемых материалову</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Блок каталога товаров -->
+
+      <section class="catalog">
+        <div class="catalog__wrapper wrapper">
+          <span class="catalog__badge badge">Каталог</span>
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+
+          <!-- Фильтр каталога-->
+          <form class="catalog__form form" action="https://echo.htmlacademy.ru/" method="get">
+            <div class="form__wrapper">
+
+              <!-- Цена -->
+              <fieldset class="form__price">
+                <legend class="form__title">Цена</legend>
+                <div class="form__range">
+                  <div class="form__scale">
+                    <div class="form__bar" style="left: 1px; width: 226px">
+                      <button class="form__toggle form__toggle--min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                      </button>
+                      <button class="form-toggle form__toggle--max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__range-input">
+                  <label class="form__range-label">
+                    <input type="number" value="0" name="min-price">
+                  </label>
+                  <label class="form__range-label">
+                    <input type="number" value="900" name="max-price">
+                  </label>
+                </div>
+              </fieldset>
+
+              <!-- Молоко -->
+              <fieldset class="form__milk">
+                <legend class="form__title">Наличие молока</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="radio" name="milk-availability" value="nevermind" checked>
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Неважно</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="radio" name="milk-availability" value="animal-only">
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Только животное</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="radio" name="milk-availability" value="plant-only">
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Только растительное</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="radio" name="milk-availability" value="no-milk" disabled>
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Без молока</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <!-- Страна производство -->
+              <fieldset class="form__country">
+                <legend class="form__title">Страна произрастания</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="checkbox" name="country-of-origin" value="brazil" checked>
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Бразилия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="checkbox" name="country-of-origin" value="ethiopia">
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Эфиопия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="checkbox" name="country-of-origin" value="сolombia">
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Колумбия</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="checkbox" name="country-of-origin" value="costa-rika">
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Коста-Рика</span>
+                    </label>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <input class="visually-hidden" type="checkbox" name="country-of-origin" value="peru" disabled>
+                      <span class="form__mark"></span>
+                      <span class="form__span-label">Перу</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <div class="form__button-wrapper">
+                <button class="form__button form__button--agree button">
+                  Применить
+                </button>
+                <button class="form__button form__button--reset button">
+                  Сбросить
+                </button>
+              </div>
+            </div>
+          </form>
+
+          
+        </div>
+      </section>
+    </main>
+
     <script src="./js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
 </html>
