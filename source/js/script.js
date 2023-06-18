@@ -2,7 +2,9 @@
 
 // Интерактивная карта leaflet.js
 
-const map = L.map('map').setView([59.968389, 30.317533], 18);
+const map = L.map('map', {
+  attributionControl: false
+}).setView([59.968389, 30.317533], 18);
 
 const myIcon = L.icon({
   iconUrl: 'img/map-pin.png',
