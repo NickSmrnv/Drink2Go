@@ -1,1 +1,23 @@
+.header {
+  position: relative;
 
+}
+
+.header__top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: 20px;
+  min-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    @include wrapper-margin;
+    min-height: 80px;
+  }
+}
+
+.header__user-menu {
+  display: flex;
+  align-items: center;
+}

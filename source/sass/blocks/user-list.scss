@@ -1,0 +1,49 @@
+.user-list {
+  @include list-reset;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.user-list__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.user-list__link {
+  padding: 20px 22px;
+  color: $black;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 22px;
+
+    &:active {
+      background-color: $secondary;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 8px;
+    padding: 28px 18px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main;
+    }
+  }
+
+  &:active {
+    background-color: $secondary;
+  }
+}

@@ -1,0 +1,21 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.logo__text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 123px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+.logo__img {
+  display: flex;
+}
