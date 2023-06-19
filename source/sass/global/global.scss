@@ -1,2 +1,17 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  @include montserrat-font;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 500;
+  color: $black;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 #map { height: 420px; }

@@ -1,7 +1,30 @@
 /* GLOBAL */
 @import "global/variables";
+@import "global/mixins";
 @import "global/global";
 @import "global/fonts";
 
 /* BLOCKS */
+@import "blocks/badge";
+@import "blocks/benefits";
+@import "blocks/button";
+@import "blocks/card";
+@import "blocks/catalog";
+@import "blocks/contacts";
+@import "blocks/copyright";
+@import "blocks/form";
 @import "blocks/header";
+@import "blocks/hero";
+@import "blocks/info";
+@import "blocks/logo";
+@import "blocks/main-footer";
+@import "blocks/map";
+@import "blocks/media";
+@import "blocks/nav";
+@import "blocks/pagination";
+@import "blocks/social";
+@import "blocks/swiper";
+@import "blocks/user-list";
+@import "blocks/visually-hidden";
+@import "blocks/wrapper";
+
