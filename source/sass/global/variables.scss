@@ -1,1 +1,24 @@
-/* здесь используйте глобальные переменные */
+// Base colors
+
+$white: #FFFFFF;
+$gray: #BDBDBD;
+$black: #333333;
+$main: #7859CF;
+$secondary: #F0EBFF;
+$main-opacity: rgba(120, 89, 207, 0.25);
+$main-lighter: #9070EC;
+$main-darker: #593CAC;
+$light-gray: #E2E2E2;
+
+// Background colors
+
+$lightest-gray: #F8F8F8;
+$flat-white: #F3EBE1;
+$lavander: #EAE6FC;
+$espresso: #E5E6E8;
+
+// Viewport
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
