@@ -1,6 +1,5 @@
 .header {
   position: relative;
-
 }
 
 .header__top-menu {
@@ -20,4 +19,11 @@
 .header__user-menu {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: $mobile-width-only) {
+
+  .header--nojs .header__wrapper {
+    margin-bottom: 230px;
+  }
 }

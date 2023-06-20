@@ -23,8 +23,8 @@
 
     <!-- Шапка -->
 
-    <header class="header">
-      <div class="header__wrapper">
+    <header class="header header--nojs">
+      <div class="header__wrapper ">
 
         <div class="header__top-menu">
           <div class="header__logo logo">
@@ -91,12 +91,6 @@
 
           </div>
         </div>
-
-
-        <!-- Навигация для мобильных устройств -->
-
-
-
       </div>
     </header>
 
@@ -107,7 +101,7 @@
 
       <section class="hero">
         <h2 class="visually-hidden">Наши кофейные новинки.</h2>
-        <div class="hero__wrapper wrapper">
+        <div class="hero__wrapper">
 
           <!-- Slider main container -->
           <div class="swiper mySwiper">
@@ -117,103 +111,115 @@
 
               <!-- Первый слайд -->
               <div class="swiper-slide">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="img/flat-white-img-mobile.png 1x, img/flat-white-img-mobile@2x.png 2x"
-                  >
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="img/flat-white-img-tablet.png 1x, img/flat-white-img-tablet@2x.png 2x"
-                  >
-                  <img
-                    src="img/flat-white-img-desktop.png"
-                    srcset="img/flat-white-img-desktop.png 1x, img/flat-white-img-desktop@2x.png 2x"
-                    alt="Небольшая банка кофе Флэт-Уайт в светлых тонах, на фоне всплеск молока."
-                  >
-                </picture>
-                <span class="hero__badge badge">Новинка!</span>
-                <h2 class="hero__title">Декаф Флэт Уайт</h2>
-                <p class="hero__text">
-                  Свежесваренный кофе без кофеина из Эфиопии
-                  с натуральным фермерским молоком — то,
-                  что нужно для расслабления после тяжёлого рабочего дня
-                </p>
-                <div class="hero__footer">
-                  <span class="hero__old-price">295₽</span>
-                  <span class="hero__new-price">225₽</span>
-                  <a class="hero__button button" href="#">Заказать</a>
+                <div class="swiper__slide-wrapper">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="img/flat-white-img-mobile.png 1x, img/flat-white-img-mobile@2x.png 2x"
+                    >
+                    <source
+                      media="(max-width: 1439px)"
+                      srcset="img/flat-white-img-tablet.png 1x, img/flat-white-img-tablet@2x.png 2x"
+                    >
+                    <img
+                      src="img/flat-white-img-desktop.png"
+                      srcset="img/flat-white-img-desktop.png 1x, img/flat-white-img-desktop@2x.png 2x"
+                      alt="Небольшая банка кофе Флэт-Уайт в светлых тонах, на фоне всплеск молока."
+                    >
+                  </picture>
+                  <span class="swiper__badge badge">Новинка!</span>
+                  <h2 class="swiper__title">Декаф Флэт Уайт</h2>
+                  <p class="swiper__text">
+                    Свежесваренный кофе без кофеина из Эфиопии
+                    с натуральным фермерским молоком — то,
+                    что нужно для расслабления после тяжёлого рабочего дня
+                  </p>
+                  <div class="swiper__footer">
+                    <div class="swiper__price">
+                      <span class="swiper__old-price">295₽</span>
+                      <span class="swiper__new-price">225₽</span>
+                    </div>
+                    <a class="swiper__button button" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
 
               <!-- Второй слайд -->
               <div class="swiper-slide">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="img/lavender-img-mobile.png 1x, img/lavender-img-mobile.png@2x.png 2x"
-                  >
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="img/lavender-img-tablet.png 1x, img/lavender-img-tablet@2x.png 2x"
-                  >
-                  <img
-                    src="img/lavender-img-desktop.png"
-                    srcset="img/lavender-img-desktop.png 1x, img/lavender-img-desktop@2x.png 2x"
-                    alt="Небольшая банка лавандового рафа в фиолетовых оттенках, на фоне ветки лаванды."
-                  >
-                </picture>
-                <span class="hero__badge badge">Новинка!</span>
-                <h2 class="hero__title">Лавандовый Латте</h2>
-                <p class="hero__text">
-                  Невероятное сочетание перуанской высокогорной
-                  арабики с молоком ламы и лавандовым сиропом
-                  унесёт вас прямо на вершину Радужных гор
-                </p>
-                <div class="hero__footer">
-                  <span class="hero__old-price">285₽</span>
-                  <span class="hero__new-price">265₽</span>
-                  <a class="hero__button button" href="#">Заказать</a>
+                <div class="swiper__slide-wrapper">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="img/lavender-img-mobile.png 1x, img/lavender-img-mobile.png@2x.png 2x"
+                    >
+                    <source
+                      media="(max-width: 1439px)"
+                      srcset="img/lavender-img-tablet.png 1x, img/lavender-img-tablet@2x.png 2x"
+                    >
+                    <img
+                      src="img/lavender-img-desktop.png"
+                      srcset="img/lavender-img-desktop.png 1x, img/lavender-img-desktop@2x.png 2x"
+                      alt="Небольшая банка лавандового рафа в фиолетовых оттенках, на фоне ветки лаванды."
+                    >
+                  </picture>
+                  <span class="swiper__badge badge">Новинка!</span>
+                  <h2 class="swiper__title">Лавандовый Латте</h2>
+                  <p class="swiper__text">
+                    Невероятное сочетание перуанской высокогорной
+                    арабики с молоком ламы и лавандовым сиропом
+                    унесёт вас прямо на вершину Радужных гор
+                  </p>
+                  <div class="swiper__footer">
+                    <div class="swiper__price">
+                      <span class="swiper__old-price">285₽</span>
+                      <span class="swiper__new-price">265₽</span>
+                    </div>
+                    <a class="swiper__button button" href="#">Заказать</a>
+                  </div>
                 </div>
               </div>
 
               <!-- Третий слайд -->
               <div class="swiper-slide">
-                <picture>
-                  <source
-                    media="(max-width: 767px)"
-                    srcset="img/espresso-img-mobile.png 1x, img/espresso-img-mobile.png@2x.png 2x"
-                  >
-                  <source
-                    media="(max-width: 1439px)"
-                    srcset="img/espresso-img-tablet.png 1x, img/espresso-img-tablet@2x.png 2x"
-                  >
-                  <img
-                    src="img/espresso-img-desktop.png"
-                    srcset="img/espresso-img-desktop.png 1x, img/espresso-img-desktop@2x.png 2x"
-                    alt="Небольшая чёрная банка эспрессо, на фоне кофейные зёрна."
-                  >
-                </picture>
-                <span class="hero__badge badge">Новинка!</span>
-                <h2 class="hero__title">Тройной Эспрессо</h2>
-                <p class="hero__text">
-                  Мощнее укола адреналина, чернее самой тёмной ночи,
-                  этот тройной эспрессо из Колумбии покажет вам,
-                  что такое настоящая бодрость
-                </p>
-                <div class="hero__footer">
-                  <span class="hero__old-price">395₽</span>
-                  <span class="hero__new-price">375₽</span>
-                  <a class="hero__button button" href="#">Заказать</a>
+                <div class="swiper__slide-wrapper">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="img/espresso-img-mobile.png 1x, img/espresso-img-mobile.png@2x.png 2x"
+                    >
+                    <source
+                      media="(max-width: 1439px)"
+                      srcset="img/espresso-img-tablet.png 1x, img/espresso-img-tablet@2x.png 2x"
+                    >
+                    <img
+                      src="img/espresso-img-desktop.png"
+                      srcset="img/espresso-img-desktop.png 1x, img/espresso-img-desktop@2x.png 2x"
+                      alt="Небольшая чёрная банка эспрессо, на фоне кофейные зёрна."
+                    >
+                  </picture>
+                  <span class="swiper__badge badge">Новинка!</span>
+                  <h2 class="swiper__title">Тройной Эспрессо</h2>
+                  <p class="swiper__text">
+                    Мощнее укола адреналина, чернее самой тёмной ночи,
+                    этот тройной эспрессо из Колумбии покажет вам,
+                    что такое настоящая бодрость
+                  </p>
+                  <div class="swiper__footer">
+                    <div class="swiper__price">
+                      <span class="swiper__old-price">395₽</span>
+                      <span class="swiper__new-price">375₽</span>
+                    </div>
+                    <a class="swiper__button button" href="#">Заказать</a>
+                  </div>
                 </div>
-              </div>
+                </div>
             </div>
             <!-- Пагинация свайпера -->
             <div class="swiper-pagination"></div>
 
             <!-- Кнопки влево/вправо свайпера -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper__button-prev"></div>
+            <div class="swiper__button-next"></div>
           </div>
         </div>
       </section>

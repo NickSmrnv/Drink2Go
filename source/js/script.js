@@ -1,8 +1,10 @@
 // Бургер меню
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
+const header = document.querySelector('.header');
 
 nav.classList.remove('nav--nojs');
+header.classList.remove('header--nojs');
 
 navToggle.addEventListener('click', function () {
   if (nav.classList.contains('nav--closed')) {
@@ -42,8 +44,8 @@ map.panTo(marker.getLatLng()); // центрирование на маркере
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper__button-next",
+    prevEl: ".swiper__button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
