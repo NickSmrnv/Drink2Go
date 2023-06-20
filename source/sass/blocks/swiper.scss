@@ -2,7 +2,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center
+  align-items: center;
+
+
+  @media (min-width: $tablet-width) {
+    min-height: 828px;
+
+    &::after {
+      @include position-absolute;
+      background-color: $white;
+      width: 100%;
+      height: 191px;
+      left: 0;
+      bottom: -1px;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 47%;
+    min-height: 714px;
+    margin-left: auto;
+    align-items: flex-start;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .swiper-slide picture {
@@ -10,10 +36,32 @@
 
   margin-top: 20px;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 30px;
+    left: 105px;
+    order: 0;
+  }
 }
 
 .swiper__badge {
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 180px;
+  }
 }
 
 .swiper__title {
@@ -28,6 +76,12 @@
   @media (min-width: $tablet-width) {
     font-size: 56px;
     line-height: 80px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-left: 0;
   }
 }
 
@@ -39,6 +93,19 @@
   font-size: 14px;
   line-height: 20px;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding-left: 0;
+    margin-bottom: 40px;
+    padding-right: 100px;
+  }
 }
 
 .swiper__footer {
@@ -47,6 +114,15 @@
   gap: 20px;
   padding: 0 20px;
   margin-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 242px;
+    padding-left: 0;
+  }
 }
 
 .swiper__price {
@@ -70,9 +146,24 @@
 }
 
 .swiper-pagination {
-  @media (max-width: $desktop-width) {
-    display: none;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-bottom: 55px;
   }
+}
+
+.swiper-pagination-line {
+  width: 62px;
+  height: 4px;
+  display: inline-block;
+  background: $white;
+  margin-right: 10px;
+}
+
+.swiper-pagination-line-active {
+  background-color: $main;
 }
 
 .swiper__button-next,
@@ -82,14 +173,49 @@
   transform: translateY(-50%);
   width: 20px;
   height: 100%;
-  background-image: url(../../img/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 640px;
+    top: 320px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+    top: 50%;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    color: $gray;
+  }
 }
 
 .swiper__button-next {
   right: 0;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%);
+
+  &:hover {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.swiper__button-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }

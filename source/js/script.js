@@ -41,6 +41,8 @@ map.panTo(marker.getLatLng()); // центрирование на маркере
 
 // Слайдер swiper.js
 
+
+
 const swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
   navigation: {
@@ -48,8 +50,25 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper__button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    keyboard: true,
+    el: '.swiper-pagination',
+    type: 'custom',
     clickable: true,
-  },
-  keyboard: true,
+    renderCustom: function (swiper, current, total) {
+      var paginationHtml = '';
+      for (var i = 0; i < total; i++) {
+        if (i === (current - 1)) {
+          paginationHtml += '<span class="swiper-pagination-line swiper-pagination-line-active"></span>';
+        } else {
+          paginationHtml += '<span class="swiper-pagination-line"></span>';
+        }
+      }
+      return paginationHtml;
+    }
+  }
+});
+
+swiper.on('init', () => {
+  document.querySelector('.swiper-button-next img').setAttribute('src', '../img/arrow-left.svg');
+  document.querySelector('.swiper-button-prev img').setAttribute('src', '../img/arrow-left.svg');
 });
