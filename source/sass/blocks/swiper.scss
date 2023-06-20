@@ -6,6 +6,8 @@
 
 
   @media (min-width: $tablet-width) {
+    min-height: 828px;
+
     &::after {
       @include position-absolute;
       background-color: $white;
@@ -18,7 +20,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 46%;
+    width: 47%;
+    min-height: 714px;
     margin-left: auto;
     align-items: flex-start;
 
@@ -163,7 +166,6 @@
   background-color: $main;
 }
 
-
 .swiper__button-next,
 .swiper__button-prev {
   position: absolute;
@@ -171,11 +173,8 @@
   transform: translateY(-50%);
   width: 20px;
   height: 100%;
-  background-image: url(../../img/arrow-left.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
-  z-index: 10;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -191,9 +190,32 @@
   &:hover {
     background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
   }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled {
+    color: $gray;
+  }
 }
 
 .swiper__button-next {
   right: 0;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%);
+
+  &:hover {
+    background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(270deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.swiper__button-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }

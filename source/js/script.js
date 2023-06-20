@@ -67,3 +67,8 @@ const swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+swiper.on('init', () => {
+  document.querySelector('.swiper-button-next img').setAttribute('src', '../img/arrow-left.svg');
+  document.querySelector('.swiper-button-prev img').setAttribute('src', '../img/arrow-left.svg');
+});
