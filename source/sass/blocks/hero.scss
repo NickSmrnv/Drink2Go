@@ -1,0 +1,22 @@
+.hero {
+
+  // Фон для Флэт-Уайт
+  & .swiper-slide:first-child {
+    background-color: $flat-white;
+
+  }
+
+  // Фон для Лавандового рафа
+  & .swiper-slide:nth-child(2) {
+    background-color: $lavander;
+  }
+
+  // Фон для эспрессо
+  & .swiper-slide:nth-child(3) {
+    background-color: $espresso;
+  }
+}
+
+.hero .swiper-slide:first-child {
+  background-color: $flat-white;
+}
