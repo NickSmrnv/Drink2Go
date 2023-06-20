@@ -1,8 +1,10 @@
 // Бургер меню
 const nav = document.querySelector('.nav');
 const navToggle = document.querySelector('.nav__toggle');
+const header = document.querySelector('.header');
 
 nav.classList.remove('nav--nojs');
+header.classList.remove('header--nojs');
 
 navToggle.addEventListener('click', function () {
   if (nav.classList.contains('nav--closed')) {
