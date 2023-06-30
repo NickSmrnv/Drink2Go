@@ -1,0 +1,36 @@
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: $gray;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.copyright__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 4px;
+  color: $gray;
+
+  &:hover {
+    color: $main;
+  }
+
+  &:active {
+    color: $main-darker;
+  }
+}

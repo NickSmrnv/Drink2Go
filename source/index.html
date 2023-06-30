@@ -512,7 +512,7 @@
     </section>
 
     <!-- Блок интерактивной карты leaflet -->
-    <section class="map">
+    <section>
       <h2 class="visually-hidden">Наш адрес на карте - г.Санкт-Петербург, набережная реки Карповки, дом 5.</h2>
       <div id="map"></div>
     </section>
@@ -526,9 +526,9 @@
           <!-- Логотип компании -->
           <div class="main-footer__logo logo">
             <a class="logo__img" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              <picture>
-                <source media="(max-width: 1439px)" srcset="img/logo-tablet.svg">
-                <img src="img/logo-desktop.svg" alt="Логотип компании Drink2Go">
+              <picture class="logo__picture">
+                <source media="(max-width: 767px)" srcset="img/logo-tablet.svg" width="82" height="36">
+                <img src="img/logo-desktop.svg" width="170" height="36" alt="Логотип компании Drink2Go">
               </picture>
             </a>
             <span class="logo__text">Интернет-магазин кофейных напитков</span>
@@ -569,7 +569,7 @@
         <div class="main-footer__container-info info">
 
           <!-- Блок интернет-магазина -->
-          <div class="info__eshop eshop">
+          <div class="info__container eshop">
             <h4 class="info__title">Интернет-магазин</h4>
             <ul class="info__list">
               <li class="info__item">
@@ -588,7 +588,7 @@
           </div>
 
           <!-- Блок медиа -->
-          <div class="info__media media">
+          <div class="info__container media">
             <h4 class="info__title">Медиа</h4>
             <ul class="info__list">
               <li class="info__item">
@@ -604,40 +604,39 @@
           </div>
 
           <!-- Блок контактов -->
-          <div class="info__contacts contacts">
-            <h4 class="info__title">Контакты</h4>
-            <ul class="info__list">
-              <li class="info__address">
-                <svg class="info__icon" width="13" height="16">
+          <div class="info__container contacts">
+            <h4 class="info__title contacts__title">Контакты</h4>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <svg class="contacts__icon" width="13" height="16">
                   <use href="img/icons/stack.svg#address" />
                 </svg>
-                <a class="info__link" href="https://goo.gl/maps/xjXRCvNn3YgpMn68A" target="_blank">Санкт-Петербург,
+                <a class="contacts__link" href="https://goo.gl/maps/xjXRCvNn3YgpMn68A" target="_blank">Санкт-Петербург,
                   набережная реки Карповки, дом 5</a>
               </li>
-              <li class="info__tel">
-                <svg class="social__icon" width="13" height="16">
+              <li class="contacts__item">
+                <svg class="contacts__icon" width="13" height="16">
                   <use href="img/icons/stack.svg#phone" />
                 </svg>
-                <a class="info__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+                <a class="contacts__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
               </li>
             </ul>
           </div>
 
         </div>
 
-        <!-- Копирайт -->
-        <div class="main-footer__copyright copyright">
-          <p class="copyright__text">
-            Разработано в
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-              HTML Academy
-              <svg class="copyright__icon" width="12" height="16">
-                <use href="img/icons/stack.svg#htmlacademy-logo" />
-              </svg>
-            </a>
-          </p>
-        </div>
-
+      </div>
+      <!-- Копирайт -->
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">
+          Разработано в
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            HTML Academy
+            <svg class="copyright__icon" width="12" height="16">
+              <use href="img/icons/stack.svg#htmlacademy-logo" />
+            </svg>
+          </a>
+        </p>
       </div>
     </footer>
   </main>

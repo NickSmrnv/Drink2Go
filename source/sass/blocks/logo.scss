@@ -13,9 +13,17 @@
     font-weight: 500;
     font-size: 11px;
     line-height: 16px;
+    flex-basis: content;
   }
 }
 
 .logo__img {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__picture {
+  display: flex;
+  align-items: center;
 }
