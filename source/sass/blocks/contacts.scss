@@ -1,0 +1,42 @@
+.contacts__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.contacts__item {
+  display: grid;
+  grid-template-columns: 13px 1fr;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.contacts__link {
+  display: flex;
+  text-decoration: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    color: $main-lighter;
+  }
+
+  &:active {
+    color: $main-darker;
+  }
+}
+
+.contacts__icon {
+  width: 13px;
+}
